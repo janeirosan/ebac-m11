@@ -1,0 +1,187 @@
+/* *-------------------------------------------------------------------------- */
+/*                             *-//SECTION GENERAL-                            */
+/* *-------------------------------------------------------------------------- */
+
+body {
+    color: var(--text);
+    font-size: var(--text-base);
+    background-color: var(--background);
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "ADLaM Display";
+}
+
+a,
+a:visited {
+    text-decoration: none;    
+    transition: color 0.2s ease 3ms;
+}
+
+/* hover for animations */
+a:hover {
+    color: var(--secondary);
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent);
+    padding: 30px;
+}
+
+.header-div div {
+    align-self: center;
+}
+
+header h1 {
+    font-style: italic;
+    color: var(--background);
+}
+
+header > nav {
+    padding-left: 15px;
+    background-color: var(--primary);
+    margin-bottom: 32px;
+    box-shadow: 0 3px 6px #00000048;
+}
+
+header a, footer a {
+    color: var(--background);
+}
+
+nav ul {
+    display: flex;
+    color: var(--background);
+    padding: 10px 0;
+}
+
+nav ul li {
+    padding-left: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.hambmenu {
+    background-color: var(--background);
+    border: none;
+    border-radius: 10px;
+}
+
+main {
+    background-color: var(--bg-secondary);
+}
+
+main h2, main h3 {
+    padding-bottom: 5px;
+    margin: 12px 0;
+    border-bottom: 3px solid var(--accent);
+}
+
+/* all buttons are primarily like the one below */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--background);
+    font-family: inherit;
+    font-size: var(--text-base);
+    transition: background-color 0.2s ease 3ms;
+}
+
+/* secondary button style */
+.scnd-btn {
+    background-color: rgba(127, 213, 228, 0.281);
+    color: var(--text);
+}
+
+/* hover for animations */
+button:hover:active {
+    cursor: pointer;
+    background-color: var(--accent);
+}
+
+footer {
+    color: var(--background);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary);
+}
+footer ul li {
+    align-content: center;
+    text-align: center;
+}
+
+.circle::before {
+    content: "\00D7";
+    user-select: none;
+}
+
+/* --------------------------- //!SECTION GENERAL --------------------------- */
+
+
+
+/* *-------------------------------------------------------------------------- */
+/*                              *-//SECTION ABOUT-                             */
+/* *-------------------------------------------------------------------------- */
+
+.about {
+    display: grid;
+    grid-template-rows: min-content, 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas:
+        'image'
+        'text';
+    justify-items: center;
+    align-items: center;
+}
+
+.ab-img {
+    grid-area: 'image';
+}
+
+.ab-text {
+    grid-area: 'text';
+}
+
+.ab-text > h2 {
+    width: 100%;
+    justify-self: left;
+}
+
+/* ---------------------------- -//!SECTION ABOUT- --------------------------- */
+
+
+/* *--------------------------------------------------------------------------- */
+/*                             *-//SECTION PRODUCTS-                            */
+/* *--------------------------------------------------------------------------- */
+
+.prods {
+    display: grid;
+    grid-template-rows: min-content, 2fr;;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.items {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-columns: subgrid;
+    grid-row: span 4;
+}
+
+.img-wrapper img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

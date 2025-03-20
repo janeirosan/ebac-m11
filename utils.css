@@ -1,0 +1,229 @@
+/* *-------------------------------------------------------------------------- */
+/*                                *UTILITIES :3                                */
+/* *-------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+
+    /* colors */
+    --text: #0a0a0a;
+    --background: #f5f5f5;
+    --primary: #0a5062;
+    --secondary: #7fd5e4;
+    --accent: #06b6d4;
+    --bg-secondary: #fff;
+
+    /* font size */
+    --text-xs:  0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+
+
+    /* html modifications */
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+/* *-------------------------------------------------------------------------- */
+/*                                *MEDIA QUERIES                               */
+/* *-------------------------------------------------------------------------- */
+
+
+/** ----------------------------- //SECTION MOBILE ---------------------------- */
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+        max-height: 240px;
+    }
+
+    header h1 {
+        font-size: var(--text-3xl);
+    }
+
+    .header-div {
+        padding: 30px;
+    }
+    
+    .hambmenu {
+        width: 32px;
+        height: 3px;
+    }
+    
+    #mid {
+        margin: 8px auto;
+    }
+    
+    main {
+        padding: 24px 32px;
+    }
+    
+    section {
+        margin-bottom: 32px;
+    }
+    
+        /* *------------------------ //ANCHOR - ABOUT ------------------------ */
+    
+    
+        .about {
+            grid-gap: 0 200px;
+        }
+    
+    
+        .ab-img > img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        
+        .ab-text {
+            padding: 10px 0;
+        }
+
+        /* *---------------------- //ANCHOR - PRODUCTS ---------------------- */
+
+        .prods {
+            margin-top: 36px;
+            grid-gap: 32px 200px;
+        }
+
+        .items {
+            padding: 0 20px;
+        }
+
+        /* *------------------------ //ANCHOR - FOOTER ----------------------- */
+
+        footer {
+            font-size: var(--text-xs);
+        }
+}
+/* ---------------------------- //!SECTION MOBILE ---------------------------- */
+
+
+
+/* *---------------------------- //SECTION TABLET ----------------------------- */
+@media screen and (min-width:641px) and (max-width: 1023px) {
+    main {
+        padding: 24px 32px;
+    }
+
+    section {
+        margin-bottom: 32px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .hambmenu {
+        display: none;
+    }
+        /* *------------------------ //ANCHOR - ABOUT ------------------------ */
+        .about {
+            grid-gap: 0 300px;
+        }
+
+        .ab-img > img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        
+        .ab-text {
+            padding: 10px 0;
+        }
+
+        /* *---------------------- //ANCHOR - PRODUCTS ---------------------- */
+
+        .prods {
+            margin-top: 30px;
+            grid-gap: 32px 10px;
+        }
+
+        .items {
+            padding: 0 20px;
+        }
+
+        /* *------------------------ //ANCHOR - FOOTER ----------------------- */
+
+        footer {
+            font-size: var(--text-sm);
+        }
+
+}
+/* --------------------------- //!SECTION TABLET ----------------------------- */
+
+
+/* *---------------------------- //SECTION DESKTOP ---------------------------- */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: var(--text-sm);
+        line-height: var(--text-xl);
+    }
+
+    main {
+        padding: 48px 64px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    main h2 {
+        margin-bottom: 24px;
+    }
+
+    section {
+        margin-bottom: 32px;
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    .hambmenu {
+        display: none;
+    }  
+
+        /* *------------------------ //ANCHOR - ABOUT ------------------------ */
+
+        .about {
+            grid-gap: 0 48px;
+            justify-items: center;
+            align-items: center;
+        }
+        .ab-img > img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        
+        .ab-text {
+            padding: 10px 0;
+        }
+
+        /* *---------------------- //ANCHOR - PRODUCTS ---------------------- */
+
+        .prods {
+            margin-top: 30px;
+        }
+
+        .items {
+            padding: 0 12px;
+        }
+}
+
+/* -------------------------- -//!SECTION DESKTOP- -------------------------- */
