@@ -149,6 +149,8 @@ footer ul li {
 }
 
 .ab-text {
+    grid-template-columns: subgrid;
+    grid-template-columns: subgrid;
     grid-area: 'text';
 }
 
